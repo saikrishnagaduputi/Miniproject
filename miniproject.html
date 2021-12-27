@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <title>mini-project</title>
+        <link rel="stylesheet" href="miniproject.css">
+        <style>
+            #newpost{
+                display:none;
+                position:absolute;
+                top:30%;
+                left:30%;
+            }
+        </style>
+        <script>  
+            function showhide() 
+            {  
+                var div = document.getElementById("newpost");  
+                if (div.style.display !== "none") {  
+                    div.style.display = "none";  
+                }  
+                else {  
+                    div.style.display = "block";  
+                }  
+            }  
+        </script>  
+    </head>
+    <body>
+        <header>
+            <h2>Marioclub</h2>
+        </header>
+        <p><h1>hello</h1></p>
+        <section class="banner">
+            <img src="images/mario1.png" alt="mario" height="600" width="1340">
+            <div class="welcome">
+            <h2>welcome to<br><span>Marioclub</span></h2>
+            </div>
+            <div class="button">
+                <button id="button" onclick="showhide()">VIDEO</button> 
+            </div>
+        </section>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="https://mario.nintendo.com/" target="blank">join the club</a></li>
+                <li><a href="https://www.ndtv.com/topic/super-mario-bros" target="blank">latest news</a></li>
+                <li><a href="https://play.google.com/store/apps/details?id=com.nintendo.zara&hl=en_IN&gl=US" target="blank">new games</a></li>
+                <li><a href="https://mario.nintendo.com/" target="blank">contacts</a></li>
+            </ul>
+        </nav>
+        <main>
+            <article>
+                <h2>It's me,mario</h2>
+                <p>The princess toadstool of the mushroom kingdom has been kidnapped 
+                by the notorious King Koopa and the toads of the mushroom kingdom have 
+                been held captive in the many castles of King Koopa. It's up to Mario 
+                and Luigi, two plumber brothers, to save the princess 
+                and defeat King Koopa and his minions.Plumber brothers Mario and Luigi
+                from Brooklyn have just arrived in an outlandish realm called the Mushroom Kingdom. 
+                It was ruled by Princess Toadstool and her faithful Mushroom people. But one day, 
+                evil cast a shadow over the land and the evil King Bowser Koopa emerged 
+                with his army of Goombas, Spinies, Flying Koopas, and other malignant creatures. 
+                King Koopa abducted Princess Toadstool and trapped her faithful Mushroom People 
+                in seven of his castles. So Mario and Luigi must intrepid deep and hazardous waters, 
+                jump from tree to tree (don't look down!), and visually examine their steps in the dark evil 
+                castles filled with fire balls and lava pits and must utilize their magic powers to 
+                subjugate the evil King Koopa and rescue the Princess</p>
+            </article>
+            <ul class="image">
+                <li><img src="images/mario2.jpg" alt="image" height="200" width="300"></li>
+                <li><img src="images/mario3.jpg" alt="image"height="200" width="300"></li>
+            </ul>
+        </main>
+        <section class="join">
+            <h2>join today!</h2>
+            <form>
+                <input type="email" name="email" placeholder="type email and hit enter" required>
+            </form>
+        </section>
+        <footer>
+            <p class="copyright">copywrite 2019 marioclub</p>
+        </footer>
+        <div id="newpost">  
+            <video controls autoplay width="600" height="400">
+                <source src="images/Pacman vs Super Mario - Super Mario Maker.mp4" type="video/mp4">
+            
+               </video>
+        </div>  
+
+    </body>
+</html>
